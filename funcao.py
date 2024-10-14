@@ -25,3 +25,27 @@ def soma(a,b):
 
 resultado = soma(3,4)
 print(resultado) # Imprime 7
+
+# Funções anônimas(lambda)
+# Python permite criar funções anonimas ou funnções lambda, que são funções sem nome definidas em uma única linha. São comumente usadas para funções pequenas e concisas.
+
+quadrado = lambda x: x ** 2
+print(quadrado(5)) # Imprime 25
+
+# Escopo de variaveis (local vs. gobal)
+# As variiaveis definidas dedntro de uma finção tem um escopo local o que significa que são só acessiveis dentro da função. por outro lado as variaveis
+# definidas fora de qualquer função tem um escopo global e podem se acessadas de qualuqer parte do programa
+
+def funcao():
+    variavel_local = 10
+    print(variavel_local) # Acessivel dentro da função
+
+variavel_global = 20
+
+def funcao2():
+    print(variavel_global) # Acessivel de qualquer lugar
+
+funcao() # Imprime 10
+funcao2() # Imprime 20
+print(variavel_global) # Imprime 20
+print(variavel_local) # Gera um erro, a variavel não está definida neste escopo
