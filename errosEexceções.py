@@ -58,3 +58,17 @@ except FileNotFoundError:
     print("Erro: Arquivo não encontrado")
 finally:
     arquivo.close() # Fecha o arquivo sempre, mesmo se ocorrer uma exceção
+
+# Exceções personalizadas
+#
+# Além das exceções incorporadas no python, você também pode criar suas proprias exceções personalizadas. Isso é útil quando deseja lidar com situações
+# especificas do seu programa
+def funcao():
+    # codigo que pode gerar um exceção personalizada
+    if condicao:
+        raise Exception("Descrição do erro")
+    
+try:
+    funcao()
+except Exception as e:
+    print(f"Erro: {str(e)}")
