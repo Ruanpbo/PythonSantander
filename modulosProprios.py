@@ -19,7 +19,7 @@ resultado = meu_modulo.calcular_soma(5,3)
 print(resultado) # Imprime 8
 
 # Operações.py
-import operacoes
+import meu_pacote.operacoes as operacoes
 
 resultado = operacoes.somar(5,3)
 operacoes.imprimir_mensagem(f"O resultado da soma é: {resultado}")
